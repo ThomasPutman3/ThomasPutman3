@@ -1,2 +1,0 @@
-- 👋 Hi, I’m @ThomasPutman3
-- 👀 I’m interested in Cybersecurity
