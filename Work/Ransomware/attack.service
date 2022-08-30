@@ -1,0 +1,13 @@
+[Unit]
+Description=Do Attack
+After=network.target
+[Service]
+Type=oneshot
+WorkingDirectory=/home/user/gradingServer
+ExecStart=/home/user/gradingServer/attack.sh
+RemainAfterExit=true
+StandardOutput=journal
+Restart=on-failure
+RestartSec=2s
+[Install]
+WantedBy=multi-user.target
