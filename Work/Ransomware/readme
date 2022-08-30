@@ -1,3 +1,8 @@
 Teams will be required to investigate a ransomware incident. They will need to restore files by decrypting a password protected archive and from backup. 
 Lastly, they will mitigate future occurrences by making firewall configuration changes.
 Grading checks will verify the flags have been found, files restored and necessary configuration changes are in place.
+
+
+attack.sh is the attack that places a unique encryption password inside of 7z.ps1 which is ran on the victim machine.
+7z.ps1 is ran on the victim machine, where it accesses the 7zip file path and password protects specific files, and then deletes the files that are not password protected.
+attack.service runs the attack script at startup of the virtual machines.
