@@ -1,0 +1,15 @@
+[Unit]
+Description=buffer overflow service
+After=variablereplace.service
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=tom
+WorkingDirectory=/home/jails
+ExecStart=nc -l -p 11111 -e /home/jails/buffer
+
+[Install]
+WantedBy=multi-user.target
