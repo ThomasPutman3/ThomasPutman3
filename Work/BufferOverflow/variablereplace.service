@@ -1,0 +1,9 @@
+[Unit]
+Description= Replaces password.txt wth guestinfo variable
+
+[Service]
+Type=oneshot
+ExecStart=/home/user/Desktop/replace.sh
+
+[Install]
+WantedBy=multi-user.target
